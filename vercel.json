@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "headers": [
+    {
+      "source": "/bhanu.jpeg",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=604800, must-revalidate" }]
+    },
+    {
+      "source": "/resume/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600, must-revalidate" }]
+    }
+  ]
+}
